@@ -49,7 +49,7 @@ const iconoGuardado = new L.Icon({
 function MapView({ ubicacionActual, ubicacionGuardada, resultado }) {
   const mapRef = useRef(null);
   
-  // Centro por defecto (Colombia, Bogotá)
+  //coordenadas  cooworking
   const defaultCenter = [4.74493, -74.04478];
   
   // Determinar el centro del mapa
@@ -151,7 +151,7 @@ function MapView({ ubicacionActual, ubicacionGuardada, resultado }) {
               icon={iconoGuardado}
             >
               <Popup>
-                <strong>💾 Ubicación Guardada</strong><br />
+                <strong> Ubicación Guardada</strong><br />
                 Lat: {ubicacionGuardada.latitude.toFixed(6)}<br />
                 Lon: {ubicacionGuardada.longitude.toFixed(6)}
               </Popup>
@@ -197,9 +197,6 @@ function MapView({ ubicacionActual, ubicacionGuardada, resultado }) {
             <span className="legend-circle"></span>
             <span>Área de 5 metros</span>
           </div>
-        </div>�️ <strong>Vista Satelital HD 2026:</strong> Imágenes de alta resolución actualizadas. Usa el selector de capas para cambiar entre diferentes vistas satelitales
-        <div className="map-info">
-          <p>💡 <strong>Tip:</strong> Usa el selector de capas (esquina superior derecha) para cambiar entre mapa de calles, satélite, híbrido o terreno</p>
         </div>
       </div>
     </div>
